@@ -1,0 +1,109 @@
+{
+   "about_event":{
+       
+           "static": [
+                {
+                    "name":"Business Logic Case",
+                    "points": 0,
+                    "des": "Here is the description",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Technical Inspection",
+                    "points": 0,
+                    "des": "Here is the description",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Sustainability",
+                    "points": 100,
+                    "des": "Here is the description",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Business Presentation",
+                    "points": 75,
+                    "des": "With a clever business plan and a convincing sales talk, the students are supposed to sell a short run order of their race car to a fictional investment group, represented by the jury.",
+                    "image_src": "car_1.jpg"
+                },
+                {
+                    "name":"Design",
+                    "points": 150,
+                    "des": "An engineering design report is handed in to the jury before the event starts and defended at a design presentation in front of expert judges. Evaluated are not only the use of new materials and creative assembly technologies, but also the overall construction and weight of the vehicle.",
+                    "image_src": "cost_report.jpg"
+                }
+            ]
+        ,
+        
+           "dynamic": [
+                {
+                    "name":"Acceleration",
+                    "points": 75,
+                    "des": "The car is accelerated from a standing position across a distance of 75 meters. Again two drivers of each team get two chances to master the challenge and the fastest time counts.",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Skid-Pad",
+                    "points": 50,
+                    "des": "Two circles with a diameter of 15.25 meters each, forming an eight have to be passed twice. Two drivers of each team have two tries to get through the so called skidpad as quickly as possible. The fastest lap time of all four trials is taken for judgement.",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Autocross",
+                    "points": 150,
+                    "des": "At the autocross event a 1 kilometer sprint circuit has to be driven to show how easy the car is to drive. This circuit consists of straights, hair pin bends and slaloms. No training laps are permitted and the best lap time is taken to determine the start position in the endurance race. All teams supply two drivers who have two tries. The fastest lap time of the four runs counts.",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Fuel Economy/CO2 emissions (100 Points)",
+                    "points": 100,
+                    "des": "During the endurance race the energy usage is being monitored using an energy meter from the competition that is installed in the car. The car that is the most energy efficient will get the highest score.",
+                    "image_src": "car_2.jpg"
+                },
+                {
+                    "name":"Endurance",
+                    "points": 300,
+                    "des": "On a track similar to the autocross, a race is driven across 22 kilometers. After eleven kilometers the teams have to do a compulsory driver change which has to be performed with in three minutes. The team who finishes the endurance with the fastest time wins.",
+                    "image_src": "car_2.jpg"
+                }
+            ]
+               
+   },
+   "about_timeline":[
+        {
+            "bg_class":"cd-picture",
+            "icon":"font-icon-leaf",
+            "title":"FSAE Italy 2015",
+            "des":"Registered for Formula SAE Italy 2015!",
+            "date":"Jan 29"
+        },
+        {
+            "bg_class":"cd-movie",
+            "icon":"font-icon-leaf",
+            "title":"Sponsor",
+            "des":"Lakshmi Precision Screws Ltd. became our sponsor",
+            "date":"March 11"
+        },
+        {
+            "bg_class":"cd-picture",
+            "icon":"font-icon-image",
+            "title":"Achievement",
+            "des":"BAJA team secured 4th Position in Design Event, 4th Position in Acceleration Event and won BEST INCOMING TEAM TROPHY!!!",
+            "date":"Jan 11"
+        },
+        {
+            "bg_class":"cd-picture",
+            "icon":"font-icon-image",
+            "title":"Title of section 4",
+            "des":"The quick brown fox jumps over a lazy dog.The quick brown fox jumps over a lazy dog.The quick brown fox jumps over a lazy dog.The quick brown fox jumps over a lazy dog.The quick brown fox jumps over a lazy dog.The quick brown fox jumps over a lazy dog.",
+            "date":"Feb 14"
+        },
+        {
+            "bg_class":"cd-picture",
+            "icon":"font-icon-image",
+            "title":"FSAE Italy 2015",
+            "des":"Registered for Formula SAE Italy 2015!",
+            "date":"Jan 29"
+        }
+    ]
+}

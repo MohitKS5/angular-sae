@@ -1,0 +1,511 @@
+/*INDEX
+base
+nav
+main content
+initial display
+flex slider
+forms
+ALUMNI PAGE
+FOOTER-
+about
+preload
+animations
+top images
+misc
+nav control members page
+*/
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 10px;
+    background-attachment: fixed;
+    background-position: center center, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: cover;
+}
+
+._babout, ._bhome, ._bsponsors {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
+}
+
+.cd-main-content {
+    background: transparent !important;
+}
+
+#_members {
+    background-color: transparent !important;
+    overflow-x: hidden !important;
+    padding-bottom: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    #_members {
+        transform: scale(1) translateY(250px);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #_members {
+        transform: scale(1.1) translateY(200px);
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #_members {
+        transform: scale(1.2) translateY(300px);
+    }
+}
+
+/*-------------nav -------------------*/
+nav {
+    margin-top: 50%;
+    z-index: 1000;
+    position: absolute;
+}
+
+.red_clr {
+    color: red;
+}
+
+.soc-links {
+    position: absolute;
+    font-weight: 500;
+    border: 0px solid black;
+    left: 90%;
+    font-size: 2rem;
+    color: #333;
+    display: none;
+    transform: translate(-40%, -150%);
+}
+
+.soc-links a i {
+    color: #333;
+}
+
+.soc-links > a > i:hover {
+    color: red;
+}
+
+._navbar {
+    width: 100vw;
+    height: 100px;
+    z-index: 800;
+    position: absolute;
+    position: fixed;
+    display: none;
+}
+
+#tabs {
+    background-color: #eee !important;
+    display: inline-block;
+    border: 0px solid black;
+    width: 100vw;
+    height: 50px;
+    padding: 35px;
+}
+
+#tabs > a {
+    padding-left: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-right: 1px solid #f2f2f2;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+#tabs > a:hover {
+    color: red !important;
+}
+
+#tabs > a:active {
+    font-color: red;
+}
+
+#home {
+    margin-left: 10%;
+}
+
+.header_theme {
+    background-color: #fff !important;
+    color: red !important;
+
+}
+
+.tab-content {
+    background: transparent !important;
+}
+
+/*--------main content-----------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Convergence', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1, h4 {
+    display: inline;
+    font-weight: 800;
+
+}
+
+h1 {
+    letter-spacing: 5px;
+    color: #ccc;
+}
+
+h2 {
+    font-size: 3rem !important;
+    color: #666;
+}
+
+h3 {
+    font-size: 2.5rem !important;
+    color: #888 !important;
+}
+
+.main-content {
+    display: block;
+    z-index: 10 !important;
+    margin-top: 0%;
+    border: 0px groove black;
+    padding: 3rem;
+    border: 0px solid black;
+
+}
+
+/*--------initial display---------*/
+h3 {
+    letter-spacing: 2px;
+    color: #d4d4d4;
+    font-weight: 900;
+}
+
+.subs {
+    margin-top: 10rem;
+}
+
+.subsheader {
+    display: block;
+    border: 0px solid black;
+    margin-left: 17%;
+    font-family: 'Convergence', sans-serif;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#e00, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    opacity: 0.9;
+}
+
+.shrunk {
+    animation: shrinks 0.2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shrinks {
+    0% {
+        position: absolute;
+        width: 300px;
+    }
+    99% {
+        position: absolute;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+@keyframes grow {
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/Contact-Us.jpg');
+    background-size: cover;
+    display: block;
+    padding: 2%;
+}
+
+/*----------flex slider-----------------*/
+.slider {
+    width: 850px;
+    margin-left: 20%;
+    display: block;
+
+}
+
+.sliderhover {
+    width: 90%;
+    margin-left: 20%;
+}
+
+/*----------------forms----------------------*/
+.my_form {
+    display: inline-block;
+    padding: 0% 0 5% 5%;
+    border-left: 3px groove white;
+    width: 30%;
+    margin-left: 30%;
+    position: absolute;
+}
+
+.my_form > input {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1% 1% 1% 1%;
+    width: 40%;
+}
+
+.my_form > input::placeholder {
+    color: red;
+    opacity: 0.7;
+}
+
+.my_form > .submit_button {
+    width: 20%;
+    height: 30px;
+    margin: 4% 0 0 30%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+}
+
+.my_form > .submit_button:hover {
+    background-color: #0f0;
+    font-size: 12px;
+    color: #666;
+}
+
+#email, #message {
+    width: 82.5%;
+}
+
+iframe.members {
+    width: 100vw;
+    height: 370vh;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
+/*---------------------------------------------ALUMNI PAGE------------------------------------------*/
+.people {
+    width: 45%;
+    margin: 5% 0.1% 5% 2%;
+    display: inline-block;
+}
+
+.people > div:nth-child(1) {
+    display: inline-block;
+    width: 49%;
+    top: 0%;
+}
+
+.people > div:nth-child(2) {
+    background-color: #fff;
+    display: inline-block;
+    width: 49%;
+    transform: translateY(-5rem);
+    font-size: 2rem;
+}
+
+.people > div > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#al {
+    margin-left: 5%;
+}
+
+.photos {
+    background-color: #fff;
+    display: block;
+    border-radius: 0% 0 0 0%;
+    margin: 10%;
+}
+
+/*---------------------------------------------FOOTER------------------------------------------*/
+.logo {
+    height: 80px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(12px);
+}
+
+.logo > img {
+    height: 70px;
+    padding-right: 2%;
+}
+
+.logo2 {
+    margin-top: 50vh;
+}
+
+#map {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+
+}
+
+.clicked {
+    pointer-events: none;
+}
+
+.about-us {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    margin-top: 0px;
+    position: absolute;
+    padding: 2%;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*----------------about-------------------*/
+p {
+    font-size: 1.5rem !important;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+/*----------------------------------------------------- preload ---------------- */
+#_preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    z-index: 800;
+    background-color: #eee !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/preloader_back.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 10px solid black;
+}
+
+#_loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    padding: 0;
+}
+
+/*-------------animations-----------------*/
+.glow_class {
+    animation: glow 3s infinite;
+    animation-delay: 1s;
+}
+
+.indicator-item:hover {
+    color: white;
+}
+
+@keyframes glow {
+
+    50% {
+        color: #666;
+    }
+}
+
+#_gallery {
+    margin: 10% 0 10% 0;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*----------top images---------------*/
+#_homepagecarousel > img, ._coverimg {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+
+}
+
+/*-------misc-------------*/
+.heavy {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+.fixit {
+    position: fixed;
+}
+
+.indicators {
+    background-color: transparent;
+    border-radius: 100px 100px 0 0;
+    height: 8rem;
+}
+
+.center_screen {
+    left: 50%;
+    top: 50%;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255,0.7);
+    font-weight: 600;
+    position: absolute;
+    font-family: 'Ruslan Display', cursive;
+}
+
+/*----------nav control members page----------------*/
+.navarrow {
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-top: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.navarrow:hover {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.L {
+    float: left;
+    transform: translateX(-150px);
+    clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
+    -webkit-clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
+}
+
+.R {
+    left: 84%;
+    clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
+    -webkit-clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
+}
+
+._circle {
+    height: 10px;
+}

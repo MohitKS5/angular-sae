@@ -1,0 +1,70 @@
+{
+   "alumni_testi":[
+       {
+           "name": "Kewal Dharamshi",
+           "designation": "Senior Engineer,Mitshubishi",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "keval_dharamshi.jpg"
+       },
+       {
+           "name": "Rohit Arora",
+           "designation": "Senior Engineer,Mitshubishi",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "rohit_arora.jpg"
+       },
+       {
+           "name": "Anmol Pandey",
+           "designation": "Innovation Engineer,Airbus",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "anmol_pandey.jpg"
+       },
+       {
+           "name": "Amar Kumar",
+           "designation": "Supply chain management trainee, Hindustan Coca-Cola Beverages Pvt Ltd.",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "amar_kumar.jpg"
+       },
+       {
+           "name": "Amber Shrivastava",
+           "designation": "Senior Engineer,ITC Limited",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "amber_shrivastava.jpg"
+       },
+       {
+           "name": "Rohinish Gupta",
+           "designation": "Purdue University",
+           "testi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam totam nulla est, illo molestiae maxime officiis, quae ad, ipsum vitae deserunt molestias eius alias.",
+           "image_src": "rohnish_gupta.jpg"
+       },
+       {
+           "name": "Ravi Shankar Mishra",
+           "designation": "Former Summer Research Intern,Technical University of Berlin",
+           "testi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam totam nulla est, illo molestiae maxime officiis, quae ad, ipsum vitae deserunt molestias eius alias.",
+           "image_src": "ravi_shankar_mishra.jpg"
+       },
+       {
+           "name": "Rajat Jain",
+           "designation": "Senior Engineer,Ivent IT Solutions Pvt. Ltd",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "rajat_jain.jpg"
+       },
+       {
+           "name": "Parth Pratik",
+           "designation": "Senior Engineer,Robert Bosch",
+           "testi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam totam nulla est, illo molestiae maxime officiis, quae ad, ipsum vitae deserunt molestias eius alias.",
+           "image_src": "parth_pratik.jpg"
+       },
+       {
+           "name": "Abhinav Prateek",
+           "designation": "Assistant Manager,ITC Limited",
+           "testi": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam totam nulla est, illo molestiae maxime officiis, quae ad, ipsum vitae deserunt molestias eius alias.",
+           "image_src": "abhinav_prateek.jpg"
+       },
+       {
+           "name": "Abhishek Shrivastava",
+           "designation": "Rotating Equipment Engineer,Shell",
+           "testi": "Its been an amazing journey for me.",
+           "image_src": "abhishek_shrivastava.jpg"
+       },
+    ]
+}

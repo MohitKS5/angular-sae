@@ -1,0 +1,432 @@
+
+html {
+    min-height: 100vh !important;
+}
+
+body {
+    font-family: 'Merienda', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rammetto One', cursive !important;
+}
+
+.swipe_pages {
+    display: block;
+    overflow-y: scroll;
+    height: 90vh !important;
+}
+
+.carousel-item > section {
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+
+#table {
+    display: block;
+    overflow-y: scroll;
+}
+
+td {
+    font-size: 10px;
+    padding: 10px 0 0 0;
+}
+
+th {
+    white-space: nowrap;
+}
+
+.members_carousel {
+    height: 40%;
+}
+
+.about-us {
+    display: block;
+    background-color: #333;
+    color: white;
+    margin-top: 0;
+    padding: 5%;
+    position: relative;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+@media screen and (min-height: 500px) {
+
+    .about-us {
+        padding: 5%;
+        position: absolute;
+        bottom: 7%;
+    }
+
+}
+
+h2 {
+    color: #f00;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+h3, h4 {
+    color: #f00;
+    font-size: 1rem !important;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.2px;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+h4 {
+    color: #333;
+}
+
+h4::before {
+    content: "♦ ";
+    font-size: 2rem;
+    color: black;
+}
+
+h4::after {
+    content: "swipe pics>>";
+    font-size: 0.8rem;
+    float: right;
+    animation: blinker 1s infinite;
+    color: black;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#_members h4:nth-child(1) {
+    margin-top: 0px !important;
+}
+
+#_members > main > h4 {
+    margin-top: 30%;
+}
+
+#_bout {
+    background-color: #fff;
+}
+
+#_sponsors {
+    background-color: #fff;
+}
+
+#_members {
+    background-color: #fff;
+}
+
+#_gallery {
+    background-color: #fff;
+}
+
+.soc-linkd > a > i {
+    display: inline;
+    color: #333 !important;
+}
+
+.soc-links > a > i {
+    color: #333;
+}
+
+.soc-links {
+    font-weight: 500;
+    transform: translateY(-5px);
+    float: right;
+    right: 20%;
+    font-size: 1.5rem;
+    color: #333;
+    display: inline;
+}
+
+.soc-links > a > i:hover {
+    color: red;
+}
+
+.button-collapse > i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navigator {
+    padding: 10px;
+    background-color: #eee
+}
+
+iframe {
+    width: 100%;
+    min-height: 90vmin;
+    border: none;
+}
+
+.imag {
+    display: block;
+    height: 40vw;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    float: right;
+}
+
+.alum:nth-child(odd) > div {
+    background-position: left;
+    float: left !important;
+}
+
+.alum {
+    display: block;
+    min-height: 45vw;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+
+}
+
+.col .s6 {
+    transform: translateY(1000px) !important;
+
+}
+
+div.alum:nth-child(2) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/abhimanyu_goyal.jpg");
+}
+
+div.alum:nth-child(3) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/abhinav_jain.jpg");
+}
+
+div.alum:nth-child(4) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/abhinavp.jpg");
+}
+
+div.alum:nth-child(5) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/abhisheks.jpg");
+}
+
+div.alum:nth-child(6) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/ajay.jpg");
+}
+
+div.alum:nth-child(7) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/amark.jpg");
+}
+
+div.alum:nth-child(8) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/amber_jaiswal.jpg");
+}
+
+div.alum:nth-child(9) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/ambers.jpg");
+}
+
+div.alum:nth-child(10) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/anmolp.jpg");
+}
+
+div.alum:nth-child(11) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/anuj_sharma.jpg");
+}
+
+div.alum:nth-child(12) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/avichal_singh.jpg");
+}
+
+div.alum:nth-child(13) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/badal.jpg");
+}
+
+div.alum:nth-child(14) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/gaurav_gupta.jpg");
+}
+
+div.alum:nth-child(15) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/harshit_rathore.jpg");
+}
+
+div.alum:nth-child(16) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/kewald.jpg");
+}
+
+div.alum:nth-child(17) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/kirtan_thakkar.jpg");
+}
+
+div.alum:nth-child(18) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/kuldeep_yadav.jpg");
+}
+
+div.alum:nth-child(19) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/kumar_prateek.jpg");
+}
+
+div.alum:nth-child(20) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/maitreya_sinha.jpg");
+}
+
+div.alum:nth-child(21) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/mohit_gupta.jpg");
+}
+
+div.alum:nth-child(22) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/mridul_bharadwaj.jpg");
+}
+
+div.alum:nth-child(23) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/nikhil_kurele.jpg");
+}
+
+div.alum:nth-child(24) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/parthp.jpg");
+}
+
+div.alum:nth-child(25) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/prabhakaran_balusundaram.jpg");
+}
+
+div.alum:nth-child(26) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/prakhar_gupta.jpg");
+}
+
+div.alum:nth-child(27) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/prakhar_gupta_EE.jpg");
+}
+
+div.alum:nth-child(28) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/prashant_kumar.jpg");
+}
+
+div.alum:nth-child(29) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/preetish_jaiswal.jpg");
+}
+
+div.alum:nth-child(30) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/rahul_tudu.jpg");
+}
+
+div.alum:nth-child(31) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/rajatj.jpg");
+}
+
+div.alum:nth-child(32) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/ravi_kothari.jpg");
+}
+
+div.alum:nth-child(33) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/ravi_ranjan.jpg");
+}
+
+div.alum:nth-child(34) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/ravis.jpg");
+}
+
+div.alum:nth-child(35) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/rishav_jain.jpg");
+}
+
+div.alum:nth-child(36) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/rohinishg.jpg");
+}
+
+div.alum:nth-child(37) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/rohita.jpg");
+}
+
+div.alum:nth-child(38) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/sagar_bhure.jpg");
+}
+
+div.alum:nth-child(39) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/salil_mishra.jpg");
+}
+
+div.alum:nth-child(40) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/sambit_das.jpg");
+}
+
+div.alum:nth-child(41) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/sanjay_raghav.jpg");
+}
+
+div.alum:nth-child(42) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/sansit.jpg");
+}
+
+div.alum:nth-child(43) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/sarvesh_koyande.jpg");
+}
+
+div.alum:nth-child(44) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/shashwat_trivedi.jpg");
+}
+
+div.alum:nth-child(45) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/shubham_agarwal.jpg");
+}
+
+div.alum:nth-child(46) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/shubhamg.jpg");
+}
+
+div.alum:nth-child(47) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/shyamal_rao.jpg");
+}
+
+div.alum:nth-child(48) > div.imag {
+    f-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/sudhanshu_ranjan.jpg");
+}
+
+div.alum:nth-child(49) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/vibhor.jpg");
+}
+
+div.alum:nth-child(50) > div.imag {
+    background-image: url("https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni/vikash.jpg");
+}
+
+._circle {
+    max-height: 50px;
+    height: 5vh;
+    margin-top: 15vh;
+}
+
+#_homepre {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/m.home-back.jpg');
+    background-size: cover;
+    background-color: black;
+    z-index: 100;
+    font-family: 'Audiowide', cursive;
+    font-size: 3.5rem;
+    padding-top: 30%;
+    color: #ddd;
+    text-align: center;
+}
+
+#lo_go {
+    width: 60%;
+    padding-top: 30%;
+}
+
+div.userView {
+    height: 30vh !important;
+
+}
+
+#__sponsor {
+    width: 100%;
+
+    height: 60vh;
+}

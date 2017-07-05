@@ -1,0 +1,18 @@
+{
+   "blog":[
+        {
+            "title":"FSAE Italy 2013",
+            "author":"Saket Diwakar",
+            "date":"Jan 29",
+            "thumbnail_src":"news_1_1.jpg",
+            "des":"FSAE Italy event took place from 13th to 16th September, 2013 on the tracks of Ricardo Paletti in Varano de' melegari, Italy, which is one of the most classic formula student racing track on European soil.<br> The event witnessed personnel from various classic automotive companies including Lamborghini, Dallara, The Fiat Group and TRW, who also sponsored the race."
+        },
+        {
+            "title":"MECHANICAL DEPARTMENT REVIEW, IIT KANPUR",
+            "author":"Saket Diwakar",
+            "date":"Jan 14",
+            "thumbnail_src":"news_6_1.jpg",
+            "des":"Mechanical Department Review that took place on 22-23 March 2014 witnessed the committee looking deeply into our last year's Formula Student car project. We presented, they inquired and we gave our best. The team put up a good show."
+        }
+   ]
+}

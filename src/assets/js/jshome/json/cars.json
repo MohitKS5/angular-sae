@@ -1,0 +1,57 @@
+{
+    "car_name": "Agni",
+    "car_journey": "After the experience gained at the FSAE Michigan and the spectacular performance at the Baja SAE India the bigger and better IIT Bombay racing looked forward to Formula Student 2009 at Silverstone, the home of British motorsport. The car which was developed over little more than a year was lighter, faster and nippier than the 2008 Vayu. The highlights of Agni our entry to Formula Student 2009 was the 22% weight reduction, the integrated seat and firewall, engine producing 10% more horses, an all new 50% lighter drive train and 4 way adjustable shock absorbers. At the competition we would compete against the best of the universities in Europe and also the 5 other teams from India.IIT Bombay Racing team was hosted in UK by Aston University in Birmingham. The team truly felt at home at the Aston University, with the interaction not only limited to their Formula Student team but also socially with team events and a launch.",
+    "car_gallery": [
+        {
+            "caption_title": "First slide label",
+            "caption_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "image_src": "car_1.jpg"
+        },
+        {
+            "caption_title": "Second slide label",
+            "caption_des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "image_src": "car_2.jpg"
+        }
+    ],
+    "car_achievement": [
+        {
+            "title": "2nd Position in Cost Report",
+            "des": "Amongst 120 experienced team we scored second rank in the world for producing the best racing vehicle with the least possible and customised budget"
+        },
+        {
+            "title": "9th Position in Business Case Presentation",
+            "des": "Highest Score amongst Indian Team"
+        }
+        
+    ],
+    "car_specs": {
+        "left":{
+            "General":{
+                "Wheelbase":"1520mm"
+            },
+            "Electronics":{
+                "Control System":"Self-designed"
+            }
+        },    
+        "right":{    
+            "Aerodynamics":{
+                "Type":"Unsprung"
+            },
+            "Chassis":{
+                "Monocoque":"Carbon fibre-reinforced polymer"
+            }
+        }    
+    },
+    "car_team": {
+        
+        "Team":{
+            "Rishabh Bhandari":"Vehicle Dynamics",
+            "Abhay Gupta":"Engine team",
+            "Gunjan Shah":"Marketing and Operations"
+        },
+        "FacultyAdvisor":[
+            "Prof. K. C. Mondal",
+            "Prof. C. Amarnath"
+        ]
+    }
+}
