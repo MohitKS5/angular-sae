@@ -1,0 +1,56 @@
+.logo {
+  height: 80px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(12px);
+}
+
+.logo > img {
+  height: 70px;
+  padding-right: 2%;
+}
+
+.logo2 {
+  margin-top: 50vh;
+}
+
+#map {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  cursor: pointer;
+
+}
+
+.clicked {
+  pointer-events: none;
+}
+
+.about-us {
+  display: inline-block;
+  width: 30%;
+  height: 200px;
+  margin-top: 0px;
+  position: absolute;
+  padding: 2%;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* marquee */
+
+._marquee {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  animation: marquee 5s linear infinite;
+}
+
+.marquee img {
+  float: left;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
