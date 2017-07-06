@@ -10,16 +10,6 @@
  //carousel bottom navbar navigatio controls
  home tab restrinct scrollvar
  */
-grow_img = function grow_img(argument) {
-    $(argument).parent().find('.navarrow').animate({}, 1);
-    console.log($(argument).prev());
-};
-
-var shrink_img = function shrink_img(argument) {
-    $(argument).parent().find('.navarrow').animate({
-        opacity: '0'
-    }, 1);
-};
 var enablescroll = function enablescroll() {
     $('#map').removeClass('clicked');
 };

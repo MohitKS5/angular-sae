@@ -1,0 +1,113 @@
+
+/*--------main content-----------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Convergence', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1, h4 {
+  display: inline;
+  font-weight: 800;
+
+}
+
+h1 {
+  letter-spacing: 5px;
+  color: #ccc;
+}
+
+h2 {
+  font-size: 3rem !important;
+  color: #666;
+}
+
+h3 {
+  font-size: 2.5rem !important;
+  color: #888 !important;
+}
+
+.main-content {
+  display: block;
+  z-index: 10 !important;
+  margin-top: 0%;
+  border: 0px groove black;
+  padding: 3rem;
+
+}
+/*--------initial display---------*/
+h3 {
+  letter-spacing: 2px;
+  color: #d4d4d4;
+  font-weight: 900;
+}
+
+.subs {
+  margin-top: 10rem;
+}
+
+.subsheader {
+  display: block;
+  border: 0px solid black;
+  margin-left: 17%;
+  font-family: 'Convergence', sans-serif;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#e00, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+  opacity: 0.9;
+}
+
+/*---------------------------------------------ALUMNI PAGE------------------------------------------*/
+.people {
+  width: 45%;
+  margin: 5% 0.1% 5% 2%;
+  display: inline-block;
+}
+
+.people > div:nth-child(1) {
+  display: inline-block;
+  width: 49%;
+  top: 0%;
+}
+
+.people > div:nth-child(2) {
+  background-color: #fff;
+  display: inline-block;
+  width: 49%;
+  transform: translateY(-5rem);
+  font-size: 2rem;
+}
+
+.people > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#al {
+  margin-left: 5%;
+}
+
+.photos {
+  background-color: #fff;
+  display: block;
+  border-radius: 0% 0 0 0%;
+  margin: 10%;
+}
+/*----------flex slider-----------------*/
+.slider {
+  width: 850px;
+  margin-left: 20%;
+  display: block;
+
+}
+
+.sliderhover {
+  width: 90%;
+  margin-left: 20%;
+}
+
+
+

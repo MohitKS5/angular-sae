@@ -1,37 +1,222 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta https-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SAE IIT Kanpur</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript">
-    <!--
-    if (screen.width <= 1024) {
-      document.location = "m.home.html";
-    }
-    //-->
-  </script>
-  -->
-  <link rel="icon" href="app/logo.ico" type="image/x-icon"/>
-  <!-- Place favicon.ico in the root directory -                    <!above navbar-->
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SAE IIT Kanpur</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Convergence|Fjalla+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"><!--font for top panels-->
+    <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.css"><!--google template-->
+    <link rel="stylesheet" type="text/css" href="assets/css/pages.css"><!--my_page-->
 
-  <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script><!--jquery-->
-  <script type="text/javascript" src="assets/js/pages.js"></script><!--my_page-->
-  <script src="assets/js/jshome/vendor/modernizr-2.8.3.min.js"></script><!--template-->
-  <script defer src="assets/js/jquery.flexslider.js"></script><!--slider-->
-  <script src="assets/js/materialize/js/materialize.js"></script><!--google template-->
-  <script src="assets/js/jshome/main.js"></script><!--timeline-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css"><!--icons-->
+    <link rel="stylesheet" type="text/css" href="assets/css/flexslider.css"><!--slides of members page-->
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon"/>
+    <!-- Place favicon.ico in the root directory -                    <!above navbar-->
+    <link rel="stylesheet" href="assets/css/csshome/sponsors.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Convergence|Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Resource style -->
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"><!--font for top panels-->
 
+    <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script><!--jquery-->
+    <script type="text/javascript" src="assets/js/pages.js"></script><!--my_page-->
+    <script type="text/javascript" src="https://e.issuu.com/embed.js" async></script>
 
 </head>
-<body>
-  <app-root></app-root>
+<body class="_babout">
 
+<style type="text/css">
+    .full_size {
+        height: 100vh !important;
+        margin-bottom: 5%;
+    }
+</style>
+
+<div class="_navbar">
+    <img src="assets/blank.gif" lsrc="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sae.png"
+         style="position: absolute; height: 50%; margin: 1% 0 0 3%;">
+    <div id="tabs">
+        <a href="" onmouseenter="chng_color(this)" id="home">home</a>
+        <a href="" onmouseenter="chng_color(this)" id="tab-about">about</a>
+        <a href="" onmouseenter="chng_color(this)">sponsors</a>
+        <a href="" onmouseenter="chng_color(this)" data-id="tab-members" class="">members</a>
+        <a href="" onmouseenter="chng_color(this)" data-id="tab-alumni">alumni</a>
+        <a href="" onmouseenter="chng_color(this)">gallery</a>
+    </div>
+    <div class="soc-links">
+        <a href="https://www.facebook.com/SAE.IITK" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://twitter.com/IITKMotorsports" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://plus.google.com/u/0/116448649617376276402" target="_blank"><i
+                class="fa fa-google-plus"></i></a>
+        <a href="https://www.linkedin.com/groups/4024304/profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+</div>
+<!--top carousel-->
+<div class="carousell carousell-sliderr center full_size" data-indicators="true">
+    <div class="carousell-fixed-item center"></div>
+    <div class="carousell-item white white-text" href="#one!">
+        <div id="_homepagecarousel">
+            <img src="assets/home/image4.jpg" class="nope">
+            <img src="assets/home/image5.png" class="nope">
+            <img src="https://res.cloudinary.com/notnowbitches/image/upload/q_10/v1498843998/home/image6.png">
+        </div>
+    </div>
+    <div class="carousell-item amber white-text" href="#two!">
+        <div>
+            <img datai="" src="assets/home/about.jpg"
+                 class="_coverimg nope"/>
+        </div>
+        <span class="center_screen">About</span>
+    </div>
+    <div class="carousell-item green white-text" href="#three!">
+        <div><img src="assets/home/sponsors.jpg"
+                  class="_coverimg nope"></div>
+        <span class="center_screen">sponsors</span>
+    </div>
+    <div class="carousell-item blue white-text" href="#four!">
+        <div>
+            <img datai="" src="https://res.cloudinary.com/notnowbitches/image/upload/q_47/v1498843998/members.jpg"
+                 class="_coverimg">
+        </div>
+        <span class="center_screen">members</span>
+    </div>
+    <div class="carousell-item yellow white-text" href="#four!">
+        <div id="_aboutpage">
+            <img datai="" src="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/alumni.jpg"
+                 class="_coverimg">
+        </div>
+        <span class="center_screen">Alumni</span>
+    </div>
+    <div class="carousell-item black white-text" href="#four!">
+        <div id="_aboutpage">
+            <img src="assets/blank.jpg"
+                 lsrc="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/home/image2.jpg"
+                 class="_coverimg">
+        </div>
+        <span class="center_screen">gallery</span>
+    </div>
+</div>
+
+
+<!--tab-about-->
+<app-root></app-root>
+
+<!--footer-->
+<div class="logo2">
+    <marquee behaviour="scroll" direction="left" class="logo">
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/pep.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/nippon.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/groz.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/lps.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/jcbl.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/rekluse.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/my.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/crystal.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/state.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/srf.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/ktm.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/wilwood.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/hind.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/cfw.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/kaz.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/tech.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/ansys.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/solid.jpg>
+        <img src="assets/blank.gif" lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/4i.jpg>
+        <img src="assets/blank.gif"
+             lsrc=https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sponsor/tinkering.jpg>
+    </marquee>
+</div>
+<!--google maps-->
+<section class="footer">
+    <div class="contacts" onclick="enablescroll()">
+        <div id="map" class="clicked"></div>
+
+        <div class="about-us">
+    <pre>
+    Society of Automotive Engineers (SAE)
+    Indian Institute of Technology, Kanpur
+    Kanpur-208016
+    Uttar Pradesh (U.P.)
+    India
+
+    pr.iitkms@gmail.com
+    </pre>
+        </div>
+        <form class="container my_form">
+            <div style="margin-left: 15%; margin-bottom:5% ;color:white ; font-weight: 500; font-size: 2rem;letter-spacing: 5px; text-transform: lowercase; display: inline;">
+                <i class="fa fa-book"></i>contact us
+            </div>
+            <br>
+            <input placeholder="First name" id="first_name" type="text" class="validate">
+            <input placeholder="Last name" id="last_name" type="text" class="validate"><br>
+            <input placeholder="email" id="email" type="text" class="validate"><br>
+            <input placeholder="message" id="message" type="text" class="validate"><br>
+            <div class="submit_button">Submit</div>
+        </form>
+    </div>
+</section>
+<!--preloader-->
+<div id="loader-wrapper">
+    <div id="loader">
+    </div>
+</div>
+
+<!--scripts-->
+</div>
+
+<script src="assets/js/jshome/vendor/modernizr-2.8.3.min.js"></script><!--template-->
+<script defer src="assets/js/jquery.flexslider.js"></script><!--slider-->
+<script src="assets/materialize/js/materialize.js"></script><!--google template-->
+<script src="assets/js/jshome/main.js"></script><!--timeline-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousell').carousell();
+    });
+
+    function initMap() {
+        var uluru = {lat: 26.5112534, lng: 80.2306062};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArDM-W1kwJA0gTGe9iJ-dui2o-RoPlxuA&callback=initMap"></script>
+<!--script-->
+<script type="text/javascript">
+    $('.carousell.carousell-sliderr').carousell({fullWidth: true});
+    $('li.indicator-item').first().html("home")
+        .next().html("about")
+        .next().html("sponsors")
+        .next().html("members")
+        .next().html("alumni")
+        .next().html("gallery");
+
+
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        //bring to home on reload$
+    }
+    $('.logo>img').each(function () {
+        $(this).attr('src', $(this).attr('lsrc'))
+    });
+</script>
+
+<script src="assets/js/imageload.js" defer async></script>
 </body>
 </html>
