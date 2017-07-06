@@ -7,6 +7,8 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { MembersComponent } from './components/members/members.component';
 import { AlumniComponent } from './components/alumni/alumni.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import {FooterComponent} from './components/footer/footer.component';
+import { SponsorsLogosComponent } from './components/sponsors-logos/sponsors-logos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     SponsorsComponent,
     MembersComponent,
     AlumniComponent,
-    GalleryComponent
+    GalleryComponent,
+    FooterComponent,
+    SponsorsLogosComponent,
   ],
   imports: [
     BrowserModule

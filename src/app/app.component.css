@@ -30,8 +30,7 @@ h3 {
 .main-content {
   display: block;
   z-index: 10 !important;
-  margin-top: 0%;
-  border: 0px groove black;
+  margin-top: 0;
   padding: 3rem;
 
 }
