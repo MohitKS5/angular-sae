@@ -1,2 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/materialize/css/materialize.css";
+@import "assets/fonts/font-awesome/css/font-awesome.min.css";
 @import "assets/css/pages.css";
+@import "assets/css/style.css";

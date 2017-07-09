@@ -315,6 +315,13 @@ p {
 }
 
 /*-------misc-------------*/
+.full_size {
+  height: 100vh !important;
+  margin-bottom: 5%;
+}
+._saelogo{
+  position: absolute; height: 50%; margin: 1% 0 0 3%;
+}
 .heavy {
     font-size: 3rem;
     font-weight: 800;
