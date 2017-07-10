@@ -9,6 +9,7 @@ import { AlumniComponent } from './components/alumni/alumni.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import {FooterComponent} from './components/footer/footer.component';
 import { SponsorsLogosComponent } from './components/sponsors-logos/sponsors-logos.component';
+import { TimelineComponent } from './components/about/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SponsorsLogosComponent } from './components/sponsors-logos/sponsors-log
     GalleryComponent,
     FooterComponent,
     SponsorsLogosComponent,
+    TimelineComponent,
   ],
   imports: [
     BrowserModule
