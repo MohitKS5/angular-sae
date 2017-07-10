@@ -101,7 +101,6 @@ nav {
 #tabs {
     background-color: #eee !important;
     display: inline-block;
-    border: 0px solid black;
     width: 100vw;
     height: 50px;
     padding: 35px;
@@ -112,8 +111,8 @@ nav {
     font-weight: 400;
     text-transform: uppercase;
     border-right: 1px solid #f2f2f2;
-    font-size: 3rem;
-    color: #fff;
+    font-size: 1.2rem;
+    color: #000;
     letter-spacing: 3px;
 }
 
@@ -122,11 +121,11 @@ nav {
 }
 
 #tabs > a:active {
-    font-color: red;
+    color: red;
 }
 
 #home {
-    margin-left: 10%;
+    margin-left: 30%;
 }
 
 .header_theme {
@@ -148,111 +147,14 @@ nav {
     display: block;
     padding: 2%;
 }
-
-
-/*----------------forms----------------------*/
-.my_form {
-    display: inline-block;
-    padding: 0% 0 5% 5%;
-    border-left: 3px groove white;
-    width: 30%;
-    margin-left: 30%;
-    position: absolute;
-}
-
-.my_form > input {
-    text-align: center;
-    background-color: white;
-    border-radius: 5px;
-    margin: 1% 1% 1% 1%;
-    width: 40%;
-}
-
-.my_form > input::placeholder {
-    color: red;
-    opacity: 0.7;
-}
-
-.my_form > .submit_button {
-    width: 20%;
-    height: 30px;
-    margin: 4% 0 0 30%;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: green;
-    color: white;
-    font-weight: 900;
-}
-
-.my_form > .submit_button:hover {
-    background-color: #0f0;
-    font-size: 12px;
-    color: #666;
-}
-
-#email, #message {
-    width: 82.5%;
-}
-
-iframe.members {
-    width: 100vw;
-    height: 370vh;
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
-}
-
-
-/*---------------------------------------------FOOTER------------------------------------------*/
-.logo {
-    height: 80px;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 1);
-    transform: translateY(12px);
-}
-
-.logo > img {
-    height: 70px;
-    padding-right: 2%;
-}
-
-.logo2 {
-    margin-top: 50vh;
-}
-
-#map {
-    display: inline-block;
-    width: 500px;
-    height: 300px;
-    cursor: pointer;
-
-}
-
-.clicked {
-    pointer-events: none;
-}
-
-.about-us {
-    display: inline-block;
-    width: 30%;
-    height: 200px;
-    margin-top: 0px;
-    position: absolute;
-    padding: 2%;
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
 /*----------------about-------------------*/
 p {
-    font-size: 1.5rem !important;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    opacity: 0.8;
-    letter-spacing: 1px;
+  font-size: 1.5rem !important;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  letter-spacing: 1px;
 }
-
 /*----------------------------------------------------- preload ---------------- */
 #_preloader {
     position: fixed;
