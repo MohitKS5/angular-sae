@@ -130,7 +130,7 @@ $(document).ready(function () {
         }, 1000);
       }
     }
-  })
+  });
 
   //clear previous and after arrows
   $('a.flex-prev , a.flex-next, a.flex-pause').html(" ").hide();
