@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SponsorsLogosComponent } from './sponsors-logos.component';
+import {SponsorsLogosComponent} from './sponsors-logos.component';
 
 describe('SponsorsLogosComponent', () => {
   let component: SponsorsLogosComponent;
@@ -8,9 +8,9 @@ describe('SponsorsLogosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SponsorsLogosComponent ]
+      declarations: [SponsorsLogosComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

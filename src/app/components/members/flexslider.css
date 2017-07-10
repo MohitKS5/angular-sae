@@ -1,4 +1,3 @@
-
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
@@ -6,6 +5,7 @@
 .flex-slider a:hover {
   outline: none;
 }
+
 .slides,
 .slides > li,
 .flex-control-nav,
@@ -14,31 +14,35 @@
   padding: 0;
   list-style: none;
 }
+
 .flex-pauseplay span {
   text-transform: capitalize;
 }
- /* BASE STYLES*/
+
+/* BASE STYLES*/
 .flexslider {
   margin: 0;
   padding: 0;
 }
-.flexslider .slides  li {
+
+.flexslider .slides li {
   -webkit-backface-visibility: hidden;
-  
+
 }
+
 /*--image props*/
 .flexslider .slides img {
   width: 200px;
-  height: 200px!important;
+  height: 200px !important;
   display: block;
 }
-.slides img{
-   border-radius: 100px;
+
+.slides img {
+  border-radius: 100px;
 }
 
-
 /*- names  */
-.slides span{
+.slides span {
   text-align: center;
   width: 200px;
   display: block;
@@ -54,16 +58,20 @@
   line-height: 0;
   height: 0;
 }
+
 html[xmlns] .flexslider .slides {
   display: block;
 }
+
 * html .flexslider .slides {
   height: 1%;
 }
+
 .no-js .flexslider .slides > li {
   display: block;
 }
- /*--- DEFAULT THEME----*/
+
+/*--- DEFAULT THEME----*/
 .flexslider {
   margin: 0 0 60px;
   background: #fff;
@@ -79,14 +87,17 @@ html[xmlns] .flexslider .slides {
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 100px 0 0 20px;
 }
+
 .flexslider .slides {
   zoom: 1;
 }
+
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;
 
 }
+
 .flex-viewport {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -98,13 +109,16 @@ html[xmlns] .flexslider .slides {
 .loading .flex-viewport {
   height: 300px;
 }
+
 .carousel li {
   margin-right: 5px;
 
 }
+
 .flex-direction-nav {
   *height: 0;
 }
+
 /*hidden side arrows to trigger scroll and bottom dots of scrollspy*/
 .flex-direction-nav a {
   text-decoration: none;
@@ -127,14 +141,16 @@ html[xmlns] .flexslider .slides {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-a:hover{
-  
+
+a:hover {
+
 }
+
 .flex-direction-nav a:before {
   font-size: 80px;
   z-index: 10;
   font-weight: 900;
-  transform: translate(-10px,30px);
+  transform: translate(-10px, 30px);
   color: red !important;
   display: none;
   content: '<';
@@ -142,36 +158,45 @@ a:hover{
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 
 }
+
 .flex-direction-nav a.flex-next:before {
   content: '>';
 }
+
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
+
 .flex-direction-nav .flex-next {
   right: -50px;
   text-align: right;
 }
+
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
 }
+
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
+
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
   right: 10px;
 }
+
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
+
 .flex-direction-nav .flex-disabled {
-  opacity: 0!important;
+  opacity: 0 !important;
   filter: alpha(opacity=0);
   cursor: default;
   z-index: -1;
 }
+
 /*useless*/
 .flex-pauseplay a {
   display: block;
@@ -186,30 +211,36 @@ a:hover{
   cursor: pointer;
   color: #000;
 }
+
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";
   font-size: 20px;
   display: inline-block;
   content: '\f004';
 }
+
 .flex-pauseplay a:hover {
   opacity: 1;
 }
+
 .flex-pauseplay a.flex-play:before {
   content: '\f003';
 }
+
 .flex-control-nav {
   width: 100%;
   position: absolute;
   bottom: -40px;
   text-align: center;
 }
+
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
   *display: inline;
 }
+
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
@@ -226,25 +257,30 @@ a:hover{
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
+
 .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
+
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
+
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
+
 .flex-control-thumbs img {
   width: 100%;
   height: auto;
@@ -258,13 +294,16 @@ a:hover{
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
+
 .flex-control-thumbs img:hover {
   opacity: 1;
 }
+
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
 }
+
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
@@ -273,6 +312,7 @@ a:hover{
     opacity: 1;
     left: 10px;
   }
+
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px;
