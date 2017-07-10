@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     font-size: 10px;
     background-attachment: fixed;
     background-position: center center, center center;
