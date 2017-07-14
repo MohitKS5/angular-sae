@@ -10,6 +10,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import {FooterComponent} from './components/footer/footer.component';
 import { SponsorsLogosComponent } from './components/sponsors-logos/sponsors-logos.component';
 import { TimelineComponent } from './components/about/timeline/timeline.component';
+import {SheetsService} from './services/sheets.service';
+import {HttpModule} from '@angular/http';
+import {ContentService} from './services/content.service';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,12 @@ import { TimelineComponent } from './components/about/timeline/timeline.componen
     TimelineComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    SheetsService,
+    ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
