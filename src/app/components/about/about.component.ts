@@ -10,7 +10,7 @@ export class AboutComponent implements OnInit {
   public json;
   public unique_identifier = '1mK2zvp6ouN5r7kh0StqkULr32l9MyO0suBpMJUL4QeM';
   getData() {
-     this.data.getCellByTitle(this.unique_identifier)
+     this.data.getPage(this.unique_identifier)
       .subscribe(
         res => console.log(this.json = res));
   }
