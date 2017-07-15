@@ -12,8 +12,8 @@ export class SheetsService {
   getJsonData(unique_identifier: string): Observable<any> {
     let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + unique_identifier + '/1/public/values?alt=json';
     return this.http.get(sheetUrl)
-      .map((res)=>res.json().feed.entry)
-      .catch(this.handleError);
+      .map((res) => res.json().feed.entry)
+      .catch(SheetsService.handleError);
   }
 
   getSheetsData(unique_identifier: string, parser?): Observable<any> {
@@ -21,29 +21,29 @@ export class SheetsService {
     return this.getJsonData(unique_identifier)
       .map(e => {
         e.map(f => {
-          object.push(this.extractCols(f,parser))
+          object.push(SheetsService.extractCols(f, parser))
         });
       })
       .map(() => object)
   }
 
-  private extractCols(f,parser?): Object {
-    let obj = new Object();
+  private static extractCols(f, parser?): Object {
+    let obj = Object();
     for (let x in f) {
       if (f.hasOwnProperty(x)) {
         let prop = x.split('$');
         if (prop[0] === 'gsx')
-          if(parser){
+          if (parser) {
             obj[prop[1]] = parser(f[x].$t);
-            console.log('parser');
-          }else {
-          obj[prop[1]] = f[x].$t.replace('</p>', '').split(`<p>`);}
+          } else {
+            obj[prop[1]] = f[x].$t.replace('</p>', '').split(`<p>`);
+          }
       }
     }
     return obj;
   }
 
-  private handleError(error: Response | any) {
+  private static handleError(error: Response | any) {
     let errMsg: string;
     if (error instanceof Response) {
       const body = error.json() || '';
