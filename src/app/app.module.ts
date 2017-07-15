@@ -12,7 +12,6 @@ import { SponsorsLogosComponent } from './components/sponsors-logos/sponsors-log
 import { TimelineComponent } from './components/about/timeline/timeline.component';
 import {SheetsService} from './services/sheets.service';
 import {HttpModule} from '@angular/http';
-import {ContentService} from './services/content.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,7 @@ import {ContentService} from './services/content.service';
   ],
   providers: [
     SheetsService,
-    ContentService],
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
