@@ -18,7 +18,8 @@ export class SheetsService {
   }
 
   getSheetsData(unique_identifier: string, parser?): Observable<any> {
-    let object = [];
+    let pseudo_obj={'start':'start'},object = [];
+    object.push(pseudo_obj);
     return this.getJsonData(unique_identifier)
       .map(e => {
         e.map(f => {
