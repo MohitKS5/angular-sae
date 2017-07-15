@@ -10,16 +10,16 @@ export class SheetsService {
   constructor(private http: Http) {
   }
 
-  getJsonData(unique_identifier: string): Observable<any> {
+  getJsonData(unique_identifier): Observable<any> {
     let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + this.googleSheetsUrl + '/'+unique_identifier+'/public/values?alt=json';
     return this.http.get(sheetUrl)
       .map((res) => res.json().feed.entry)
       .catch(SheetsService.handleError);
   }
 
-  getSheetsData(unique_identifier: string, parser?): Observable<any> {
+  getSheetsData(unique_identifier, parser?): Observable<any> {
     let pseudo_obj={'start':'start'},object = [];
-    object.push(pseudo_obj);
+    object.push(pseudo_obj);object.push(pseudo_obj);
     return this.getJsonData(unique_identifier)
       .map(e => {
         e.map(f => {

@@ -2,14 +2,14 @@
 <section class="tab-content" id="_sponsors">
   <main class="cd-main-content" style="background:white;">
 
-    <section class="cd-section cd-container" *ngFor="let cont of sheet.slice(1,2)">
+    <section class="cd-section cd-container" *ngFor="let cont of sheet.slice(2,3)">
       <h2>{{cont.heading}}</h2>
       <p *ngFor="let p of cont.contents">{{p}}</p>
     </section>
 
     <section id="cd-placeholder-2" class="cd-section cd-container">
-      <h2>{{sheet[1].heading}}</h2>
-      <div *ngFor="let cont of sheet.slice(3,8)">
+      <h2>{{sheet[3].heading}}</h2>
+      <div *ngFor="let cont of sheet.slice(4,9)">
           <h4>{{cont.heading}}</h4>
         <p>{{cont.contents}}</p>
       </div>
@@ -32,75 +32,12 @@
           <td><span>Large</span></td>
           <td><span>Medium</span></td>
         </tr>
-        <tr>
-          <td>Tax Exemption</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Partnership Certificate</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Promotion On Teams Fan's Page</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Company logo on Team apparel and driving gear</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Company logo on Team official website</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Special Recognition In Print and News media</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Preferential access during recruitment season at IITK</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Publicity In College Festivals</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Hoardings on pit during competition</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Workshops at Institute's technical fests</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Promotional displays at company's events</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Company's name associated with vehicle's name</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td>Invitation as the guest of honour for launch event</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
-        </tr>
-        <tr>
-          <td style="padding-bottom:20px;">Promotional Displays At Company's Events</td>
-          <td><span class="font-icon font-icon-checkbox-checked"></span></td>
+        <tr *ngFor="let cont of sheet2.slice(4)">
+          <td>{{cont['benefits']}}</td>
+          <td *ngIf="cont['sttier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
+          <td *ngIf="cont['ndtier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
+          <td *ngIf="cont['rdtier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
+          <td *ngIf="cont['thtier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
         </tr>
         </tbody>
       </table>
@@ -108,7 +45,7 @@
 
     <section id="cd-placeholder-4" class="cd-section cd-container">
       <h2>Why Sponsor Us</h2>
-      <div *ngFor="let cont of sheet.slice(9)">
+      <div *ngFor="let cont of sheet.slice(10)">
         <h4>{{cont.heading}}</h4>
         <p>{{cont.contents}}</p>
       </div>
