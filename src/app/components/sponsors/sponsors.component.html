@@ -9,7 +9,7 @@
 
     <section id="cd-placeholder-2" class="cd-section cd-container">
       <h2>{{sheet[3].heading}}</h2>
-      <div *ngFor="let cont of sheet.slice(4,9)">
+      <div *ngFor="let cont of sheet.slice(4,8)">
         <h4>{{cont.heading}}</h4>
         <p>{{cont.contents}}</p>
       </div>
@@ -18,8 +18,8 @@
     <app-brochure></app-brochure>
 
     <section id="cd-placeholder-4" class="cd-section cd-container">
-      <h2>Why Sponsor Us</h2>
-      <div *ngFor="let cont of sheet.slice(10)">
+      <h2>{{sheet[8].heading}}</h2>
+      <div *ngFor="let cont of sheet.slice(9)">
         <h4>{{cont.heading}}</h4>
         <p>{{cont.contents}}</p>
       </div>
