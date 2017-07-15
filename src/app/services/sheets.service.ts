@@ -21,29 +21,7 @@ export class SheetsService {
     return res.json().feed.entry as Observable<any>;
   }
 
-  getSheetData(unique_identifier: string): Observable<any> {
-    let object = [];
-    return this.getJsonData(unique_identifier)
-      .map(e => {
-        e.map(f => {
-          object.push(this.extractCols(f))
-        });
-      })
-      .map(() => object)
-      .catch(this.handleError);
-  }
 
-  private extractCols(f): Object {
-    let obj = new Object();
-    for (let x in f) {
-      if (f.hasOwnProperty(x)) {
-        let prop = x.split('$');
-        if (prop[0] === 'gsx')
-          obj[prop[1]] = f[x].$t.replace('</p>', '').split(`<p>`);
-      }
-    }
-    return obj;
-  }
 
   private handleError(error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
