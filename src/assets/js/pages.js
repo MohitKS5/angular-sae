@@ -72,7 +72,7 @@ $(document).ready(function () {
   }
 
   //bring navbar when window crosses the 1st screen
-  var secondaryNavTopPosition = $('ul.indicators').offset().top;
+  var secondaryNavTopPosition = $('ul.indicators').offset().top-100;
   $(window).on('scroll', function () {
     if ($(window).scrollTop() > secondaryNavTopPosition) {
       setTimeout(function () {

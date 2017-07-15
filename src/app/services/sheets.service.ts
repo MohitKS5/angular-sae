@@ -6,11 +6,12 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class SheetsService {
+  public googleSheetsUrl='1mK2zvp6ouN5r7kh0StqkULr32l9MyO0suBpMJUL4QeM';
   constructor(private http: Http) {
   }
 
   getJsonData(unique_identifier: string): Observable<any> {
-    let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + unique_identifier + '/1/public/values?alt=json';
+    let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + this.googleSheetsUrl + '/'+unique_identifier+'/public/values?alt=json';
     return this.http.get(sheetUrl)
       .map((res) => res.json().feed.entry)
       .catch(SheetsService.handleError);
