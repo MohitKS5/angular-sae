@@ -10,38 +10,12 @@
     <section id="cd-placeholder-2" class="cd-section cd-container">
       <h2>{{sheet[3].heading}}</h2>
       <div *ngFor="let cont of sheet.slice(4,9)">
-          <h4>{{cont.heading}}</h4>
+        <h4>{{cont.heading}}</h4>
         <p>{{cont.contents}}</p>
       </div>
     </section> <!-- #cd-placeholder-2 -->
 
-    <section id="cd-placeholder-3" class="cd-section cd-container">
-      <h2>Sponsors Scheme</h2>
-      <table style="table-layout:fixed;">
-        <thead>
-        <tr>
-          <th style="padding-top:20px;">Benefits</th>
-          <th>1st Tier<br>( 100k+ )</th>
-          <th>2nd Tier<br>( 50k+ )</th>
-          <th>3rd Tier<br>( 20k+ )</th>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Logos on the car bodyworks</td>
-          <td><span>Extra Large</span></td>
-          <td><span>Large</span></td>
-          <td><span>Medium</span></td>
-        </tr>
-        <tr *ngFor="let cont of sheet2.slice(4)">
-          <td>{{cont['benefits']}}</td>
-          <td *ngIf="cont['sttier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
-          <td *ngIf="cont['ndtier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
-          <td *ngIf="cont['rdtier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
-          <td *ngIf="cont['thtier']=='y'"><span class="font-icon font-icon-checkbox-checked">y</span></td>
-        </tr>
-        </tbody>
-      </table>
-    </section> <!-- #cd-placeholder-3 -->
+    <app-brochure></app-brochure>
 
     <section id="cd-placeholder-4" class="cd-section cd-container">
       <h2>Why Sponsor Us</h2>

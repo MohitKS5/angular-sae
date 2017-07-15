@@ -7,16 +7,12 @@ import {SheetsService} from '../../services/sheets.service';
   styleUrls: ['./sponsors.component.css']
 })
 export class SponsorsComponent implements OnInit {
-  public unique_identifier = [3,4];
+  public unique_identifier = 3;
   public sheet;
-  sheet2;
   getData() {
-      this.data.getSheetsData(this.unique_identifier[0])
+      this.data.getSheetsData(this.unique_identifier)
       .subscribe(
         res => console.log(this.sheet=res));
-    this.data.getSheetsData(this.unique_identifier[1])
-      .subscribe(
-        res => console.log(this.sheet2=res));
   }
 
   constructor(private data: SheetsService,) {

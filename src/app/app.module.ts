@@ -12,6 +12,7 @@ import { SponsorsLogosComponent } from './components/sponsors-logos/sponsors-log
 import { TimelineComponent } from './components/about/timeline/timeline.component';
 import {SheetsService} from './services/sheets.service';
 import {HttpModule} from '@angular/http';
+import { BrochureComponent } from './components/sponsors/brochure/brochure.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {HttpModule} from '@angular/http';
     FooterComponent,
     SponsorsLogosComponent,
     TimelineComponent,
+    BrochureComponent,
   ],
   imports: [
     BrowserModule,
