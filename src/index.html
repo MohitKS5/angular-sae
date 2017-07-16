@@ -25,7 +25,7 @@
 </style>
 
 <div class="_navbar">
-  <img src="assets/blank.gif" lsrc="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sae.png"
+  <img src="assets/blank.gif" alt="/sae.png"
        class="_saelogo">
   <div id="tabs">
     <a id="home">home</a>
@@ -66,20 +66,20 @@
   </div>
   <div class="carousell-item blue white-text">
     <div>
-      <img src="https://res.cloudinary.com/notnowbitches/image/upload/q_47/v1498843998/members.jpg" class="_coverimg">
+      <img src="https://res.cloudinary.com/notnowbitches/image/upload/q_47/v1498843998/members.jpg" class="_coverimg nope">
     </div>
     <span class="center_screen">members</span>
   </div>
   <div class="carousell-item yellow white-text">
     <div id="_aboutpage">
-      <img src="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/alumni.jpg" class="_coverimg">
+      <img src="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/alumni.jpg" class="_coverimg nope">
     </div>
     <span class="center_screen">Alumni</span>
   </div>
   <div class="carousell-item black white-text">
     <div>
       <img src="assets/blank.jpg"
-           lsrc="https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/home/image2.jpg" class="_coverimg">
+           alt="/home/image2.jpg" class="_coverimg">
     </div>
     <span class="center_screen">gallery</span>
   </div>
@@ -132,9 +132,6 @@
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-  $('.logo>img').each(function () {
-    $(this).attr('src', $(this).attr('lsrc'))
-  });
 </script>
 <script src="assets/js/imageload.js" defer async></script>
 
