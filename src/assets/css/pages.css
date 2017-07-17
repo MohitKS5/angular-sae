@@ -28,7 +28,7 @@ body {
 }
 
 ._babout, ._bhome, ._bsponsors {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/sae_back.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
 }
 
 .cd-main-content {
@@ -142,7 +142,7 @@ nav {
 
 
 .footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/Contact-Us.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/Contact-Us.jpg');
     background-size: cover;
     display: block;
     padding: 2%;
@@ -166,7 +166,7 @@ p {
     width: 100vw !important;
     z-index: 800;
     background-color: #eee !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/notnowbitches/image/upload/v1498843998/preloader_back.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/preloader_back.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;

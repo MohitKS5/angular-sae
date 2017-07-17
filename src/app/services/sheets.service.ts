@@ -12,7 +12,8 @@ export class SheetsService {
 
   getJsonData(unique_identifier): Observable<any> {
     let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + this.googleSheetsUrl + '/'+unique_identifier+'/public/values?alt=json';
-    return this.http.get(sheetUrl)
+    return this.http.get('/assets/data.json')
+      .map((res)=>{console.log('hell'+res);return res;})
       .map((res) => res.json().feed.entry)
       .catch(SheetsService.handleError);
   }
@@ -36,7 +37,7 @@ export class SheetsService {
         let prop = x.split('$');
         if (prop[0] === 'gsx')
           if (parser) {
-            obj[prop[1]] = parser(f[x].$t);
+            obj[prop[1]] = parser(f[x].$t,f,x);
           } else {
             obj[prop[1]] = f[x].$t.replace('</p>', '').split(`<p>`);
           }
