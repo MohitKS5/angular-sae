@@ -12,7 +12,7 @@ export class SheetsService {
 
   getJsonData(unique_identifier): Observable<any> {
     let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + this.googleSheetsUrl + '/'+unique_identifier+'/public/values?alt=json';
-    return this.http.get('/assets/data.json')
+    return this.http.get('/assets/json/'+unique_identifier+'.json')
       .map((res)=>{console.log('hell'+res);return res;})
       .map((res) => res.json().feed.entry)
       .catch(SheetsService.handleError);

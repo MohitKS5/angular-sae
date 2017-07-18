@@ -13,6 +13,7 @@ import { TimelineComponent } from './components/about/timeline/timeline.componen
 import {SheetsService} from './services/sheets.service';
 import {HttpModule} from '@angular/http';
 import { BrochureComponent } from './components/sponsors/brochure/brochure.component';
+import { SubFilterPipe } from './components/members/sub-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BrochureComponent } from './components/sponsors/brochure/brochure.compo
     SponsorsLogosComponent,
     TimelineComponent,
     BrochureComponent,
+    SubFilterPipe,
   ],
   imports: [
     BrowserModule,
