@@ -19,12 +19,6 @@ export class MembersComponent implements OnInit {
   constructor(private data:SheetsService) {
     this.getData();
   }
-  sheets(subs:string){
-    console.log(subs);
-    let a=this.sheet.filter( cont => cont.subsystem.toUpperCase()==subs.toUpperCase());
-    console.log(a);
-    return a;
-  }
   ngOnInit() {
   }
 

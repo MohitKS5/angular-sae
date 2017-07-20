@@ -28,7 +28,7 @@
     <section class="slider">
       <div class="flexslider carousel">
         <ul class="slides">
-          <li *ngFor="let cont of sheets(subs)">
+          <li *ngFor="let cont of sheet | subFilter:subs">
             <img src="assets/blank.gif" alt={{cont.picurl}}/>
             <span class="_name">{{cont.name}}</span>
           </li>

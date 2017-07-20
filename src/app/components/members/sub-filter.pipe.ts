@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 
 export class SubFilterPipe implements PipeTransform {
-  transform(items: any[], args: any[]): any {
-    return items.filter(item => item.subsystem == "Brakes");
+  transform(array: any[], args: string): Array<any> {
+    console.log(args);
+    return array.filter(item => item.subsystem == args);
   }
 }
