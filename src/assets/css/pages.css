@@ -38,25 +38,7 @@ body {
 #_members {
     background-color: transparent !important;
     overflow-x: hidden !important;
-    padding-bottom: 40%;
-}
-
-@media screen and (max-width: 1200px) {
-    #_members {
-        transform: scale(1) translateY(250px);
-    }
-}
-
-@media screen and (max-width: 1600px) {
-    #_members {
-        transform: scale(1.1) translateY(200px);
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    #_members {
-        transform: scale(1.2) translateY(300px);
-    }
+    padding-bottom: 100px;
 }
 
 /*-------------nav -------------------*/
@@ -263,6 +245,8 @@ p {
   margin-top: 50px;
   opacity: 0.5;
   cursor: pointer;
+  z-index: 10000;
+  zoom: 1.5;
 }
 
 .navarrow:hover {
@@ -272,13 +256,13 @@ p {
 
 .L {
   float: left;
-  transform: translateX(-150px);
+  transform: translateX(-160px);
   clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
   -webkit-clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
 }
 
 .R {
-  left: 84%;
+  left: 87%;
   clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
   -webkit-clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
 }

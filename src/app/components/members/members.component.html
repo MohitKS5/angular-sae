@@ -3,7 +3,7 @@
   <section class="subs">
     <span class="subsheader">Faculty</span>
     <section class="slider">
-      <div class="flexslider carousel">
+      <div class="flexslider carousel full">
         <ul class="slides">
           <li>
             <a href="https://home.iitk.ac.in/~sde/">
@@ -26,7 +26,7 @@
   <section class="subs" *ngFor="let subs of subsystems">
     <span class="subsheader">{{subs}}</span>
     <section class="slider">
-      <div class="flexslider carousel">
+      <div class="flexslider carousel full">
         <ul class="slides">
           <li *ngFor="let cont of sheet | subFilter:subs">
             <img src="assets/blank.gif" alt={{cont.picurl}}/>
