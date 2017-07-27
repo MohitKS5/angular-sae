@@ -5,7 +5,7 @@ import {SubFilterPipe} from './sub-filter.pipe';
 @Component({
   selector: 'app-members',
   templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css', './flexslider.css']
+  styleUrls: ['./members.component.css']
 })
 export class MembersComponent implements OnInit {
   public sheet;
