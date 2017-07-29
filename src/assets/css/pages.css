@@ -74,7 +74,7 @@ nav {
 ._navbar {
     width: 100vw;
     height: 100px;
-    z-index: 800;
+    z-index: 10000;
     position: absolute;
     position: fixed;
     display: none;
@@ -96,6 +96,7 @@ nav {
     font-size: 1.2rem;
     color: #000;
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 #tabs > a:hover {
@@ -245,8 +246,8 @@ p {
   margin-top: 50px;
   opacity: 0.5;
   cursor: pointer;
-  z-index: 10000;
-  zoom: 1.5;
+  z-index: 1000;
+  zoom: 1;
 }
 
 .navarrow:hover {
@@ -257,14 +258,14 @@ p {
 .L {
   float: left;
   transform: translateX(-160px);
-  clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
-  -webkit-clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
+  clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
 }
 
 .R {
   left: 87%;
-  clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
-  -webkit-clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
+  clip-path: polygon(0% 0%, 50% 50%,0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
 }
 
 ._circle {

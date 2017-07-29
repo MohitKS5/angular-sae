@@ -110,6 +110,8 @@ $(document).ready(function () {
     $("#_" + activeTab).fadeIn(700);
     if (activeTab === 'home') {
       $($indicator).addClass('glow_class');
+      window.scrollTo(0, 0);
+      $('body').css({"overflow": "hidden"});
     }
     else {
       $($indicator).removeClass('glow_class');
