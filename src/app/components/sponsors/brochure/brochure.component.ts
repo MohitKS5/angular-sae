@@ -12,7 +12,7 @@ export class BrochureComponent implements OnInit {
   getData() {
     this.data.getSheetsData(this.unique_identifier)
       .subscribe(
-        res => console.log(this.sheet2 = res));
+        res => this.sheet2 = res);
   }
   constructor(private data:SheetsService) {
     this.getData();

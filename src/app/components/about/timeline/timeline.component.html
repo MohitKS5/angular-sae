@@ -1,4 +1,4 @@
-<section id="cd-timeline" class="cd-container">
+<section id="cd-timeline" class="cd-container" *ngIf="sheet">
   <div class="cd-timeline-block" *ngFor="let cont of sheet.slice(2)">
     <div class="cd-timeline-img is-hidden cd-location">
       <img src="/ame/sae/assets/cd-icon-location.svg" alt="Picture" class="nope">

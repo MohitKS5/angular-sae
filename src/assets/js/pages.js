@@ -13,12 +13,6 @@
 var enablescroll = function enablescroll() {
   $('#map').removeClass('clicked');
 };
-var funL = function funL($this) {
-  $($this).parent().find('a.flex-prev').trigger('click');
-};
-var funR = function funR($this) {
-  $($this).parent().find('a.flex-next').trigger('click');
-};
 
 $(document).ready(function () {
   $(document).scrollTop(0);
@@ -41,25 +35,6 @@ $(document).ready(function () {
       .appendTo('#_homepagecarousel');
   }, 3000);
 
-//flexslider members page
-  $('.flexslider').flexslider({
-    animation: "slide",
-    animationLoop: true,
-    itemWidth: 210,
-    itemMargin: 5,
-    pausePlay: true,
-    start: function () {
-      $('body').removeClass('loading');
-    }
-  });
-
-  //add controllers for nav through slider in members page
-  var navelement2 = "<span onclick='funL(this)' class='navarrow L'></span>",
-    navelement = "<span onclick='funR(this)' class='navarrow R'></span>";
-  $('.slider')
-    .prepend(navelement)
-    .prepend(navelement2);
-
   //blinking on home page
   var $indicator = $('li.indicator-item');
   if ($indicator.first().hasClass('active')) {
@@ -72,7 +47,7 @@ $(document).ready(function () {
   }
 
   //bring navbar when window crosses the 1st screen
-  var secondaryNavTopPosition = $('ul.indicators').offset().top-100;
+  var secondaryNavTopPosition = $('li.indicator-item').offset().top-50;
   $(window).on('scroll', function () {
     if ($(window).scrollTop() > secondaryNavTopPosition) {
       setTimeout(function () {
@@ -133,9 +108,4 @@ $(document).ready(function () {
       }
     }
   });
-
-  //clear previous and after arrows
-  $('a.flex-prev , a.flex-next, a.flex-pause').html(" ").hide();
-
-
 });

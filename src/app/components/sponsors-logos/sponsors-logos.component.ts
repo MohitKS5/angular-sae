@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SheetsService} from '../../services/sheets.service';
 
 @Component({
   selector: 'app-sponsors-logos',
@@ -6,10 +7,16 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./sponsors-logos.component.css']
 })
 export class SponsorsLogosComponent implements OnInit {
-hell="/sponsor/pep.jpg";
-  constructor() {
+  public sheet;
+  public unique_identifier = '6';
+  getData() {
+    this.data.getSheetsData(this.unique_identifier)
+      .subscribe(
+        res => this.sheet = res);
   }
-
+  constructor(private data:SheetsService) {
+    this.getData();
+  }
   ngOnInit() {
   }
 

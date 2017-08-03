@@ -14,6 +14,7 @@ import {SheetsService} from './services/sheets.service';
 import {HttpModule} from '@angular/http';
 import { BrochureComponent } from './components/sponsors/brochure/brochure.component';
 import { SubFilterPipe } from './components/members/sub-filter.pipe';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SubFilterPipe } from './components/members/sub-filter.pipe';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FlexLayoutModule
   ],
   providers: [
     SheetsService,
