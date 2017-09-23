@@ -7,7 +7,7 @@ p{
   width: 25vw;
   height: 20vh;
   background-color: red;
-  z-index: 999999;
+  z-index: 999;
   transition: all 1s;
 }
 .cd-timeline-block:nth-child(odd) .timedImage{

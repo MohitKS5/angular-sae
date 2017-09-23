@@ -10,14 +10,12 @@ nav {
 }
 
 .soc-links {
-  position: absolute;
   font-weight: 500;
-  border: 0px solid black;
-  left: 90%;
   font-size: 2rem;
   color: #333;
   display: none;
-  transform: translate(-40%, -150%);
+  width: 15vw;
+  /*transform: translate(-40%, -150%);*/
 }
 
 .soc-links a i {
@@ -29,24 +27,22 @@ nav {
 }
 
 ._navbar {
+  background-color: #eee;
   width: 100vw;
-  height: 100px;
-  z-index: 10000;
+  z-index: 1000;
   position: fixed;
   display: none;
   top: 0;
 }
 
 #tabs {
-  background-color: #eee !important;
   display: inline-block;
-  width: 100vw;
-  height: 50px;
-  padding: 35px;
+  width: 70vw;
+  height: 7vh;
+  padding: 3vh;
 }
 
 #tabs > a {
-  padding-left: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   border-right: 1px solid #f2f2f2;
@@ -64,17 +60,17 @@ nav {
   color: red;
 }
 
-#home {
-  margin-left: 30%;
-}
-
 .header_theme {
   background-color: #fff !important;
   color: red !important;
 
 }
 
-.tab-content {
-  background: transparent !important;
+._saelogo{
+  width: 15vw;
 }
 
+._saelogo>img{
+  width: 100%;
+  padding: 0 5vw 0 5vw;
+}
