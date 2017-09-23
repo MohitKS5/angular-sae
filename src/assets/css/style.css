@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -32,7 +32,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -50,9 +50,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -323,8 +323,7 @@ header h1 {
     width: 100%;
     left: 122%;
     top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;

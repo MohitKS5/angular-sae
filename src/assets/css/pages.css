@@ -37,89 +37,6 @@ body {
     padding-bottom: 100px;
 }
 
-/*-------------nav -------------------*/
-nav {
-    margin-top: 50%;
-    z-index: 1000;
-    position: absolute;
-}
-
-.red_clr {
-    color: red;
-}
-
-.soc-links {
-    position: absolute;
-    font-weight: 500;
-    border: 0px solid black;
-    left: 90%;
-    font-size: 2rem;
-    color: #333;
-    display: none;
-    transform: translate(-40%, -150%);
-}
-
-.soc-links a i {
-    color: #333;
-}
-
-.soc-links > a > i:hover {
-    color: red;
-}
-
-._navbar {
-    width: 100vw;
-    height: 100px;
-    z-index: 10000;
-    position: absolute;
-    position: fixed;
-    display: none;
-}
-
-#tabs {
-    background-color: #eee !important;
-    display: inline-block;
-    width: 100vw;
-    height: 50px;
-    padding: 35px;
-}
-
-#tabs > a {
-    padding-left: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-right: 1px solid #f2f2f2;
-    font-size: 1.2rem;
-    color: #000;
-    letter-spacing: 3px;
-    cursor: pointer;
-}
-
-#tabs > a:hover {
-    color: red !important;
-}
-
-#tabs > a:active {
-    color: red;
-}
-
-#home {
-    margin-left: 30%;
-}
-
-.header_theme {
-    background-color: #fff !important;
-    color: red !important;
-
-}
-
-.tab-content {
-    background: transparent !important;
-}
-
-
-
-
 .footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/Contact-Us.jpg');
     background-size: cover;
@@ -201,9 +118,10 @@ p {
   height: 100vh !important;
   margin-bottom: 5%;
 }
-._saelogo{
-  position: absolute; height: 50%; margin: 1% 0 0 3%;
+.tab-content {
+  background: transparent !important;
 }
+
 .heavy {
     font-size: 3rem;
     font-weight: 800;

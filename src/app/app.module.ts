@@ -15,6 +15,7 @@ import {HttpModule} from '@angular/http';
 import { BrochureComponent } from './components/sponsors/brochure/brochure.component';
 import { SubFilterPipe } from './components/members/sub-filter.pipe';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     TimelineComponent,
     BrochureComponent,
     SubFilterPipe,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
