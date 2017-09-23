@@ -1,4 +1,4 @@
-<section class="main-content tab-content" id="_members">
+<section class="main-content tab-content" id="_members" *ngIf="sheet">
   <h1 style="margin-left: 10%;color: #555;">MEMBERS</h1>
   <section class="subs">
     <span class="subsheader">Faculty</span>
@@ -26,8 +26,8 @@
   <section class="subs" *ngFor="let subs of subsystems">
     <span class="subsheader">{{subs}}</span>
     <section class="slider">
-      <div class="flexslider carousel full">
-        <ul class="slides">
+      <div class="full">
+        <ul class="slides" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutWrap>
           <li *ngFor="let cont of sheet | subFilter:subs">
             <img src="assets/blank.gif" alt={{cont.picurl}}/>
             <span class="_name">{{cont.name}}</span>

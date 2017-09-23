@@ -1,3 +1,24 @@
 p{
   text-align: justify;
 }
+
+.timedImage{
+  position: absolute;
+  width: 25vw;
+  height: 20vh;
+  background-color: red;
+  z-index: 999999;
+  transition: all 1s;
+}
+.cd-timeline-block:nth-child(odd) .timedImage{
+  right: 0;
+  top: 0;
+}
+
+.cd-timeline-block:nth-child(even) .timedImage{
+  left: 0;
+}
+
+.timedImage img{
+  width: 100%;
+}

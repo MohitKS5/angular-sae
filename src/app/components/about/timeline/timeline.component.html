@@ -1,12 +1,15 @@
-<section id="cd-timeline" class="cd-container">
+<section id="cd-timeline" class="cd-container" *ngIf="sheet">
   <div class="cd-timeline-block" *ngFor="let cont of sheet.slice(2)">
     <div class="cd-timeline-img is-hidden cd-location">
-      <img src="/assets/images/cd-icon-location.svg" alt="Picture">
+      <img src="/ame/sae/assets/cd-icon-location.svg" alt="Picture" class="nope">
     </div>
     <div class="cd-timeline-content is-hidden">
       <h2>{{cont.heading}}</h2>
       <p>{{cont.contents}}</p>
       <span class="cd-date">{{cont.date}}</span>
+    </div>
+    <div class="timedImage">
+      <img src="assets/blank.gif" alt={{cont.picurl}}/>
     </div>
   </div>
 </section>

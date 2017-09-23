@@ -27,10 +27,6 @@ body {
     background-size: cover;
 }
 
-._babout, ._bhome, ._bsponsors {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
-}
-
 .cd-main-content {
     background: transparent !important;
 }
@@ -74,7 +70,7 @@ nav {
 ._navbar {
     width: 100vw;
     height: 100px;
-    z-index: 800;
+    z-index: 10000;
     position: absolute;
     position: fixed;
     display: none;
@@ -96,6 +92,7 @@ nav {
     font-size: 1.2rem;
     color: #000;
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 #tabs > a:hover {
@@ -233,38 +230,6 @@ p {
     font-weight: 600;
     position: absolute;
     font-family: 'Ruslan Display', cursive;
-}
-/*----------nav control members page----------------*/
-.navarrow {
-  font-size: 30px;
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  margin-top: 50px;
-  opacity: 0.5;
-  cursor: pointer;
-  z-index: 10000;
-  zoom: 1.5;
-}
-
-.navarrow:hover {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.L {
-  float: left;
-  transform: translateX(-160px);
-  clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
-  -webkit-clip-path: polygon(100% 100%, 50% 50%, 100% 0%, 60% 50%, 100% 20%, 100% 80%, 60% 50%, 100% 100%);
-}
-
-.R {
-  left: 87%;
-  clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
-  -webkit-clip-path: polygon(0% 0%, 50% 50%, 0% 100%, 40% 50%, 0% 80%, 0% 20%, 40% 50%, 0% 0%);
 }
 
 ._circle {
