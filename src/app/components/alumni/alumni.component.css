@@ -9,6 +9,7 @@
   display: inline-block;
   width:40%;
   min-width: 120px;
+  max-width: 250px;
 }
 
 /*.people > div:nth-child(2) {*/
@@ -71,4 +72,10 @@ h3 {
   border: 0px groove black;
   padding: 3rem;
 
+}
+
+@media(min-width: 1024px) {
+  .people{
+    margin: 30px;
+  }
 }
