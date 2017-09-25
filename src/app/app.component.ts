@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls:['./app.component.css'],
 })
 export class AppComponent {
-  title = 'app';
+  public mobile = window.screen.width < 1024;
 }

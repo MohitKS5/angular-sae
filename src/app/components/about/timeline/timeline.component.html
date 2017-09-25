@@ -1,7 +1,7 @@
 <section id="cd-timeline" class="cd-container" *ngIf="sheet">
   <div class="cd-timeline-block" *ngFor="let cont of sheet.slice(2)">
     <div class="cd-timeline-img is-hidden cd-location">
-      <img src="/ame/sae/assets/cd-icon-location.svg" alt="Picture" class="nope">
+      <img src="/ame/sae/assets/cd-icon-location.svg">
     </div>
     <div class="cd-timeline-content is-hidden">
       <h2>{{cont.heading}}</h2>
@@ -9,7 +9,9 @@
       <span class="cd-date">{{cont.date}}</span>
     </div>
     <div class="timedImage">
-      <img src="assets/blank.gif" alt={{cont.picurl}}/>
+      <img src="assets/blank.gif"
+           [lazyLoad]="'https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998'+cont.picurl"
+           [alt]="'https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998'+cont.picurl"/>
     </div>
   </div>
 </section>

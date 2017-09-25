@@ -1,0 +1,249 @@
+
+html {
+  min-height: 100vh !important;
+}
+
+body {
+  font-family: 'Merienda', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rammetto One', cursive !important;
+}
+
+.swipe_pages {
+  display: block;
+  overflow-y: scroll;
+  height: 90vh !important;
+}
+
+.side-nav{
+  transition: transform 0.2s ease-in-out;
+}
+.opened{
+  transform: translateX(0) !important;
+}
+.carousel-item > section {
+  text-align: left;
+}
+
+p {
+  text-align: justify;
+}
+
+#table {
+  display: block;
+  overflow-y: scroll;
+}
+
+td {
+  font-size: 10px;
+  padding: 10px 0 0 0;
+}
+
+th {
+  white-space: nowrap;
+}
+
+.members_carousel {
+  height: 40%;
+}
+
+.about-us {
+  display: block;
+  background-color: #333;
+  color: white;
+  margin-top: 0;
+  padding: 5%;
+  position: relative;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+@media screen and (min-height: 500px) {
+
+  .about-us {
+    padding: 5%;
+    position: absolute;
+    bottom: 7%;
+  }
+
+}
+
+h2 {
+  color: #f00;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+h3, h4 {
+  color: #f00;
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.2px;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+
+h4 {
+  color: #333;
+}
+
+h4::before {
+  content: "♦ ";
+  font-size: 2rem;
+  color: black;
+}
+
+h4::after {
+  content: "swipe pics>>";
+  font-size: 0.8rem;
+  float: right;
+  animation: blinker 1s infinite;
+  color: black;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#_members h4:nth-child(1) {
+  margin-top: 0px !important;
+}
+
+#_members > main > h4 {
+  margin-top: 30%;
+}
+
+#_bout {
+  background-color: #fff;
+}
+
+#_sponsors {
+  background-color: #fff;
+}
+
+#_members {
+  background-color: #fff;
+}
+
+#_gallery {
+  background-color: #fff;
+}
+
+.soc-linkd > a > i {
+  display: inline;
+  color: #333 !important;
+}
+
+.soc-links > a > i {
+  color: #333;
+}
+
+.soc-links {
+  font-weight: 500;
+  transform: translateY(-5px);
+  float: right;
+  right: 20%;
+  font-size: 1.5rem;
+  color: #333;
+  display: inline;
+}
+
+.soc-links > a > i:hover {
+  color: red;
+}
+
+.button-collapse > i {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.navigator {
+  padding: 10px;
+  background-color: #eee;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+
+iframe {
+  width: 100%;
+  min-height: 90vmin;
+  border: none;
+}
+
+.imag {
+  display: block;
+  height: 40vw;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  float: right;
+}
+
+.alum:nth-child(odd) > div {
+  background-position: left;
+  float: left !important;
+}
+
+.alum {
+  display: block;
+  min-height: 45vw;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+
+}
+
+.col .s6 {
+  transform: translateY(1000px) !important;
+
+}
+
+
+._circle {
+  max-height: 50px;
+  height: 5vh;
+  margin-top: 15vh;
+}
+
+#_homepre {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://res.cloudinary.com/imagelibraryfsae/image/upload/q_26/v1498843998/m.home-back.jpg');
+  background-size: cover;
+  background-color: black;
+  z-index: 100;
+  font-family: 'Audiowide', cursive;
+  font-size: 3.5rem;
+  padding-top: 30%;
+  color: #ddd;
+  text-align: center;
+}
+
+#lo_go {
+  width: 60%;
+  padding-top: 30%;
+}
+
+div.userView {
+  height: 30vh !important;
+
+}
+
+#__sponsor {
+  width: 100%;
+  height: 60vh;
+}
+
+.routeroutlet{
+  margin-top: 12vh;
+}

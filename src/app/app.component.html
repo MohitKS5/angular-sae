@@ -1,10 +1,14 @@
-<section class="tab-content" id="_home"></section>
-<app-nav></app-nav>
-<app-about></app-about>
-<app-sponsors></app-sponsors>
-<app-members></app-members>
-<app-alumni></app-alumni>
-<app-gallery></app-gallery>
-<app-sponsors-logos></app-sponsors-logos>
-<app-footer></app-footer>
-
+<section *ngIf="!mobile">
+  <div class="tab-content" id="_home"></div>
+  <app-nav></app-nav>
+  <app-about></app-about>
+  <app-sponsors></app-sponsors>
+  <app-members></app-members>
+  <app-alumni></app-alumni>
+  <app-gallery></app-gallery>
+  <app-sponsors-logos></app-sponsors-logos>
+  <app-footer></app-footer>
+</section>
+<section *ngIf="mobile">
+  <app-mob-nav></app-mob-nav>
+</section>

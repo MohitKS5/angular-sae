@@ -12,7 +12,7 @@ export class SheetsService {
 
   getJsonData(unique_identifier): Observable<any> {
     let sheetUrl = 'https://spreadsheets.google.com/feeds/list/' + this.googleSheetsUrl + '/'+unique_identifier+'/public/values?alt=json';
-    return this.http.get('' + 'https://shielded-eyrie-48330.herokuapp.com/json/'+unique_identifier)
+    return this.http.get('' + 'https://turbo-iitkms.herokuapp.com/json/'+unique_identifier)
       .map((res) => res.json().feed.entry)
       .catch(SheetsService.handleError);
   }

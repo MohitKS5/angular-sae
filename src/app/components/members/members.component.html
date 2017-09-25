@@ -8,14 +8,14 @@
           <li>
             <a href="https://home.iitk.ac.in/~sde/">
               <img src="assets/blank.gif"
-                   alt="/member/faculty/santanu.jpg"/>
+                   [lazyLoad]="'https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/member/faculty/santanu.jpg'"/>
             </a>
             <span class="_name">Dr. Santanu De</span>
           </li>
           <li>
             <a href="https://iitk.ac.in/new/sachin-y-shinde">
               <img src="assets/blank.gif"
-                   alt="/member/faculty/sachin.jpg"/>
+                   [lazyLoad]="'https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/member/faculty/sachin.jpg'"/>
             </a>
             <span class="_name">Dr. Sachin Y. Shinde</span>
           </li>
@@ -29,7 +29,8 @@
       <div class="full">
         <ul class="slides" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutWrap>
           <li *ngFor="let cont of sheet | subFilter:subs">
-            <img src="assets/blank.gif" alt={{cont.picurl}}/>
+            <img src="/assets/blank.gif"
+                 [lazyLoad]="'https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998'+cont.picurl"/>
             <span class="_name">{{cont.name}}</span>
           </li>
         </ul>

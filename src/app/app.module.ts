@@ -16,6 +16,9 @@ import { BrochureComponent } from './components/sponsors/brochure/brochure.compo
 import { SubFilterPipe } from './components/members/sub-filter.pipe';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { NavComponent } from './components/nav/nav.component';
+import { MobNavComponent } from './components/mob-nav/mob-nav.component';
+import {AppRoutingModule} from './app.route';
+import {LazyLoadImageModule} from 'ng2-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -31,11 +34,14 @@ import { NavComponent } from './components/nav/nav.component';
     BrochureComponent,
     SubFilterPipe,
     NavComponent,
+    MobNavComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule,
+    LazyLoadImageModule,
   ],
   providers: [
     SheetsService,

@@ -1,0 +1,53 @@
+<ul id="slide-out" class="side-nav" [class.opened]="opened">
+  <li>
+    <div class="userView">
+      <div class="background">
+        <img src="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/menuback.png"
+             style="width: 100%;" class="nope">
+      </div>
+      <a href="#!user"><img class="_circle"
+                            src="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae.png"></a>
+      <a href="#!email"><span class="white-text email">pr.iitkms@gmail.com</span></a>
+    </div>
+  </li>
+  <li *ngFor="let route of routes" (click)="opened = false">
+    <a class="waves-effect" name='1' [routerLink]="route">
+      <i class="fa fa-slack"></i>{{route}}
+    </a>
+    <div class="divider"></div>
+  </li>
+  <li><a class="waves-effect"
+         href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.flickr.com%2Fphotos%2F138096301%40N02%2Falbums&h=ATOI9aeDZ69xojNPG4iZPcLN9_bWcaxTLJ1VpmiELT-w4NMZgn8E8FBY_YfRlK2KqMzsd1BtW6rQnBGm6BTYfj-GN3xCDM1TtZToCK5z5rUl-gJmaEWNZYH1WYLAHCGCvxitv3PWn-VNVg"
+         target="_blank" id="NO"><i class="fa fa-slack"></i>gallery</a></li>
+  <li>
+    <div class="divider"></div>
+  </li>
+  <li>
+    <div class="about-us">
+      <p style="text-align: center; line-height: 15px; padding:1% 0 0 0;color: white;">
+        Society of Automotive Engineers (SAE)<br>
+        Indian Institute of Technology, Kanpur<br>
+        Kanpur-208016<br>
+        Uttar Pradesh (U.P.)<br>
+        India
+        <br>
+        pr.iitkms@gmail.com
+      <p>
+    </div>
+  </li>
+</ul>
+<div class="navigator">
+  <span data-activates="slide-out"
+        class="button-collapse"><i class="fa fa-bars" (click)="opened = !opened"> menu</i></span>
+  <div class="soc-links">
+    <a href="https://www.facebook.com/SAE.IITK" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://twitter.com/IITKMotorsports" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/u/0/116448649617376276402" target="_blank"><i
+      class="fa fa-google-plus"></i></a>
+    <a href="https://www.linkedin.com/groups/4024304/profile" target="_blank"><i class="fa fa-linkedin"></i></a>
+  </div>
+</div>
+<div class="divider"></div>
+<div (click)="opened = false" class="routeroutlet">
+  <router-outlet></router-outlet>
+</div>

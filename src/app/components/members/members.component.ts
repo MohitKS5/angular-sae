@@ -9,6 +9,7 @@ import {SubFilterPipe} from './sub-filter.pipe';
 })
 export class MembersComponent implements OnInit {
   public sheet;
+  public mobile = window.screen.width < 1024;
   public subsystems=['Brakes','Chassis','Powertrain','Vehicle Dynamics','Marketing','Web Development'];
   public unique_identifier = '5';
   getData() {

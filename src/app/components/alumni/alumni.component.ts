@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./alumni.component.css']
 })
 export class AlumniComponent implements OnInit {
-
+  public mobile = window.screen.width < 1024;
   constructor() {
   }
 
