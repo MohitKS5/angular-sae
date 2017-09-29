@@ -8,6 +8,7 @@ import {SheetsService} from '../../services/sheets.service';
 })
 export class AboutComponent implements OnInit {
   public sheet;
+  public mobile = window.screen.width < 1024;
   public unique_identifier = '1';
   getData() {
      this.data.getSheetsData(this.unique_identifier)

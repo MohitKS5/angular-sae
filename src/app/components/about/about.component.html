@@ -4,6 +4,6 @@
       <h2>{{cont.heading}}</h2>
       <p *ngFor="let p of cont.contents">{{p}}</p>
     </section>
-    <app-timeline></app-timeline>
+    <div *ngIf="!mobile"><app-timeline></app-timeline></div>
   </main>
 </section>

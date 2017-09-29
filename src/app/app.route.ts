@@ -21,7 +21,11 @@ const routes: Routes = [
   {
     path: 'alumni',
     component: AlumniComponent,
-  }
+  },
+  {
+    path: '**',
+    redirectTo: 'about'
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
