@@ -37,14 +37,21 @@ h3 {
 li{
   display: inline-block;
 }
-li img{
+li img, .images{
   width: 200px;
   border-radius: 100px;
-  margin: 10px;
 }
-li:hover img{
+li img{
+  clip-path: circle(100px at 100px 100px);
+}
+li:hover .images{
   box-shadow:0px 0px 15px 6px #ccc;
   filter:saturate(1.5);
+}
+.images{
+  overflow: hidden;
+  height: 200px;
+  margin: 10px;
 }
 li span{
   display: block;

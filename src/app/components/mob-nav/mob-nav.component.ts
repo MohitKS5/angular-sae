@@ -7,11 +7,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MobNavComponent implements OnInit {
   public opened: boolean;
+  public clicked: boolean;
   public mobile = window.screen.width < 1024;
-  public routes = ['about','sponsors','members','alumni'];
+  public routes = ['About', 'Sponsors', 'Members', 'Alumni'];
 
   constructor() {
     this.opened = false;
+    this.clicked = true;
   }
 
   ngOnInit() {

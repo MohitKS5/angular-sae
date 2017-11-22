@@ -29,9 +29,11 @@
       <div class="full">
         <ul class="slides" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutWrap>
           <li *ngFor="let cont of sheet | subFilter:subs">
-            <img src="/assets/blank.gif"
-                 [lazyLoad]="'https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998'+cont.picurl"/>
-            <span class="_name">{{cont.name}}</span>
+            <div class="images">
+              <img src="assets/blank.gif"
+                 [lazyLoad]="getImage(cont.picurl)"/>
+            </div>
+              <span class="_name">{{cont.name}}</span>
           </li>
         </ul>
       </div>

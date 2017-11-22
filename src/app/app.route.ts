@@ -4,8 +4,13 @@ import {MembersComponent} from './components/members/members.component';
 import {AboutComponent} from './components/about/about.component';
 import {SponsorsComponent} from './components/sponsors/sponsors.component';
 import {AlumniComponent} from './components/alumni/alumni.component';
+import {HomeComponent} from './components/home/home.component';
 
 const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent
+  },
   {
     path: 'members',
     component: MembersComponent
@@ -21,10 +26,6 @@ const routes: Routes = [
   {
     path: 'alumni',
     component: AlumniComponent,
-  },
-  {
-    path: '**',
-    redirectTo: 'about'
   },
 ];
 @NgModule({

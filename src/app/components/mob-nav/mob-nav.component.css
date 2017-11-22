@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: Anton;
+  src: url('/assets/fonts/Anton-Regular.ttf');
+}
 html {
   min-height: 100vh !important;
 }
@@ -135,6 +138,24 @@ div.userView {
 
 .menu-items a{
   height: 8vh !important;
+}
+
+.menu_button{
+  width: 100vw;
+  height: 10vh;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 0;
+  left: 50vw;
+  transform: translateX(-50%);
+  z-index: 102;
+  background-color: #e10505;
+  font-size: 8vh;
+  line-height: 10vh;
+  text-align: center;
+  /*border-radius: 10%;*/
+  color: white;
+  font-family: Anton ;
 }
 @media screen and (min-height: 500px) {
 

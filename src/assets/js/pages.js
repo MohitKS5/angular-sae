@@ -25,9 +25,9 @@ $(document).ready(function () {
     if ($('#waevr').hasClass('carousell')) {
       //carousel home tab
       var $homeslider = '#_homepagecarousel';
-      $($homeslider + ">img:not(:nth-child(1))").hide();
+      $($homeslider + " picture:not(:nth-child(1))").hide();
       setInterval(function () {
-        $($homeslider + '> img:first')
+        $($homeslider + ' picture:first')
           .fadeOut(1500)
           .next()
           .fadeIn(1500)

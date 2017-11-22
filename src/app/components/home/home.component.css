@@ -1,0 +1,9 @@
+div{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: black url("/ame/sae/assets/home/mobile.jpg") no-repeat center center;
+  background-size: contain;
+  transform: translateY(-12vh);
+  z-index: 100;
+}

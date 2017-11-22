@@ -15,14 +15,14 @@
       </div>
     </li>
     <li *ngFor="let route of routes" (click)="opened = false" class="menu-items">
-      <a class="waves-effect" name='1' [routerLink]="route">
+      <a class="waves-effect" name='1' [routerLink]="route.toLowerCase()" (click)="clicked = false">
         <i class="fa fa-slack"></i>{{route}}
       </a>
       <div class="divider"></div>
     </li>
     <li><a class="waves-effect"
            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.flickr.com%2Fphotos%2F138096301%40N02%2Falbums&h=ATOI9aeDZ69xojNPG4iZPcLN9_bWcaxTLJ1VpmiELT-w4NMZgn8E8FBY_YfRlK2KqMzsd1BtW6rQnBGm6BTYfj-GN3xCDM1TtZToCK5z5rUl-gJmaEWNZYH1WYLAHCGCvxitv3PWn-VNVg"
-           target="_blank" id="NO"><i class="fa fa-slack"></i>gallery</a></li>
+           target="_blank" id="NO"><i class="fa fa-slack" (click)="clicked = false"></i>Gallery</a></li>
     <li>
       <div class="divider"></div>
     </li>
@@ -41,7 +41,7 @@
     </li>
   </ul>
   <div class="navigator">
-    <span class="button-collapse"><i class="fa fa-bars" (click)="opened = !opened"> menu</i></span>
+    <span class="button-collapse"><i class="fa fa-bars" (click)="opened = !opened"> Menu</i></span>
     <div class="soc-links">
       <a href="https://www.facebook.com/SAE.IITK" target="_blank"><i class="fa fa-facebook-official"></i></a>
       <a href="https://twitter.com/IITKMotorsports" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -57,3 +57,4 @@
   </div>
 </section>
 <section [class.overlay]="opened" (click)="opened = false"></section>
+<div class="menu_button" (click)="opened = true" *ngIf="clicked">Menu</div>

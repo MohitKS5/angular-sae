@@ -19,6 +19,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { MobNavComponent } from './components/mob-nav/mob-nav.component';
 import {AppRoutingModule} from './app.route';
 import {LazyLoadImageModule} from 'ng2-lazyload-image';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {LazyLoadImageModule} from 'ng2-lazyload-image';
     SubFilterPipe,
     NavComponent,
     MobNavComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
